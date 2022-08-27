@@ -82,9 +82,9 @@ function initWebCam(){
         //     height: { ideal: 720 }
         // },
         audio: false,
-        autoplay: '',
-        muted: '',
-        playsinline: '',
+        autoplay: false,
+        muted: false,
+        playsinline: false,
     }
 
     // Get image from camera
