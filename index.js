@@ -70,9 +70,11 @@ function initWebCam(){
     console.log("initWebCam...");
     webCam = document.createElement('video');
     webCam.id = 'webcam';
-    webCam.autoplay = true;
     webCam.width    = 640;
     webCam.height   = 480;
+    webCam.autoplay = '';
+    webCam.muted    = '';
+    webCam.playsinline = '';
 
     const option = {
         video: true,
@@ -82,9 +84,6 @@ function initWebCam(){
         //     height: { ideal: 720 }
         // },
         audio: false,
-        autoplay: true,
-        muted: true,
-        playsinline: true,
     }
 
     // Get image from camera
